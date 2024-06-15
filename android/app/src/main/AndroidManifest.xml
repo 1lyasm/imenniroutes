@@ -3,6 +3,8 @@
         android:label="imenniroutes"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
+         <meta-data android:name="com.google.android.geo.API_KEY"
+               android:value="AIzaSyA1miDBw7MFI3q3Wz4dQxhbJndqXmKP3nk"/>
         <activity
             android:name=".MainActivity"
             android:exported="true"

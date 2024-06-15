@@ -3,15 +3,13 @@ import 'package:imenniroutes/map.dart';
 
 void main() {
   runApp(
-   const MaterialApp(
+   MaterialApp(
     home: MyApp(),
     ),
   );
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -20,11 +18,11 @@ class MyApp extends StatelessWidget {
           child: Column( // Use Column for vertical arrangement
             mainAxisAlignment: MainAxisAlignment.center, // Center content vertically
             children: [
-              const Text(
-                'salam',
+              Text(
+                'demos',
                 style: TextStyle(fontSize: 32),
               ),
-              const SizedBox(height: 20), // Add space between text and button
+              SizedBox(height: 20), // Add space between text and button
               ElevatedButton(
                 onPressed: () {
                   Navigator.push(
@@ -32,7 +30,7 @@ class MyApp extends StatelessWidget {
                   MaterialPageRoute(builder: (context) => map()),
                 );
                 },
-                child: const Text('Click Me'),
+                child: Text('map'),
               ),
             ],
           ),
