@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:imenniroutes/map.dart';
+import 'package:imenniroutes/gemini.dart';
 
 void main() {
   runApp(
@@ -31,6 +32,16 @@ class MyApp extends StatelessWidget {
                 );
                 },
                 child: Text('map'),
+              ),
+              SizedBox(height: 20), // Add space between text and button
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => gemini()),
+                );
+                },
+                child: Text('gemini'),
               ),
             ],
           ),
