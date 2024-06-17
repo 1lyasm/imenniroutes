@@ -1,47 +1,51 @@
 import 'package:flutter/material.dart';
-import 'package:imenniroutes/map.dart';
 import 'package:imenniroutes/gemini.dart';
+import 'package:imenniroutes/map.dart';
 
 void main() {
   runApp(
-   MaterialApp(
-    home: MyApp(),
+    const MaterialApp(
+      home: MyApp(),
     ),
   );
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
         body: Center(
-          child: Column( // Use Column for vertical arrangement
-            mainAxisAlignment: MainAxisAlignment.center, // Center content vertically
+          child: Column(
+            // Use Column for vertical arrangement
+            mainAxisAlignment:
+                MainAxisAlignment.center, // Center content vertically
             children: [
-              Text(
+              const Text(
                 'demos',
                 style: TextStyle(fontSize: 32),
               ),
-              SizedBox(height: 20), // Add space between text and button
+              const SizedBox(height: 20), // Add space between text and button
               ElevatedButton(
                 onPressed: () {
                   Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => map()),
-                );
+                    context,
+                    MaterialPageRoute(builder: (context) => const map()),
+                  );
                 },
-                child: Text('map'),
+                child: const Text('map'),
               ),
-              SizedBox(height: 20), // Add space between text and button
+              const SizedBox(height: 20), // Add space between text and button
               ElevatedButton(
                 onPressed: () {
                   Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => gemini()),
-                );
+                    context,
+                    MaterialPageRoute(builder: (context) => gemini()),
+                  );
                 },
-                child: Text('gemini'),
+                child: const Text('gemini'),
               ),
             ],
           ),
