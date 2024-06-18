@@ -42,7 +42,7 @@ class MyApp extends StatelessWidget {
                 onPressed: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => gemini()),
+                    MaterialPageRoute(builder: (context) => const gemini()),
                   );
                 },
                 child: const Text('gemini'),
