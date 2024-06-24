@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:imenniroutes/gemini.dart';
+import 'package:imenniroutes/login_page.dart';
 import 'package:imenniroutes/map.dart';
 
 void main() {
@@ -46,6 +47,16 @@ class MyApp extends StatelessWidget {
                   );
                 },
                 child: const Text('gemini'),
+              ),
+              const SizedBox(height: 20), // Add space between text and button
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => const LoginPage()),
+                  );
+                },
+                child: const Text('login'),
               ),
             ],
           ),
