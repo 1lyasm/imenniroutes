@@ -1,7 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart' hide EmailAuthProvider;
 import 'package:firebase_ui_auth/firebase_ui_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:imenniroutes/imenniroutes.dart';
+import 'package:imenniroutes/home_page.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({super.key});
@@ -18,7 +18,7 @@ class LoginPage extends StatelessWidget {
             ],
           );
         }
-        return const Imenniroutes();
+        return const HomePage();
       },
     );
   }

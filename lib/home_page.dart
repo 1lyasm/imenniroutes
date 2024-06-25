@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:imenniroutes/gemini.dart';
 import 'package:imenniroutes/map.dart';
 
-class Imenniroutes extends StatelessWidget {
-  const Imenniroutes({super.key});
+class HomePage extends StatelessWidget {
+  const HomePage({super.key});
 
   @override
   Widget build(BuildContext context) {
