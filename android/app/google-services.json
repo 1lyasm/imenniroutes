@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "945051820712",
+    "project_id": "imenniroutes",
+    "storage_bucket": "imenniroutes.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:945051820712:android:213fcb1109b7ae5e47589d",
+        "android_client_info": {
+          "package_name": "org.imenniroutes"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBA75ywpGUhLkBbwKnCZkAkZj1CWDrmRf4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
