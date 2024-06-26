@@ -12,7 +12,20 @@
           "package_name": "org.imenniroutes"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "945051820712-u90mtgb1uq7r69l9l6bdoch89rkdp2lf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "org.imenniroutes",
+            "certificate_hash": "81fd11b428984051b4746e1b25f6d46d74e9ccef"
+          }
+        },
+        {
+          "client_id": "945051820712-8cab957ksotcevitle6fof8heoiir4ee.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyBA75ywpGUhLkBbwKnCZkAkZj1CWDrmRf4"
@@ -20,7 +33,19 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "945051820712-8cab957ksotcevitle6fof8heoiir4ee.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "945051820712-gui7nle3f4ggm28spbhk7jus6sp67cck.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.imenniroutes"
+              }
+            }
+          ]
         }
       }
     }
