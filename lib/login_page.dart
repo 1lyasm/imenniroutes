@@ -15,50 +15,20 @@ class LoginPage extends StatelessWidget {
       builder: (context, snapshot) {
         if (!snapshot.hasData) {
           return SignInScreen(
+            showAuthActionSwitch: false,
             providers: [
-              EmailAuthProvider(),
               GoogleProvider(
                   clientId:
                       "945051820712-8cab957ksotcevitle6fof8heoiir4ee.apps.googleusercontent.com"),
             ],
-            headerBuilder: (context, constraints, shrinkOffset) {
+            subtitleBuilder: (context, constraints) {
               return Padding(
-                padding: const EdgeInsets.all(20),
-                child: AspectRatio(
-                  aspectRatio: 1,
-                  child:
-                      Image.asset('assets/flutterfire_300x.png'),
-                ),
-              );
-            },
-            subtitleBuilder: (context, action) {
-              return Padding(
-                padding:
-                    const EdgeInsets.symmetric(vertical: 8.0),
-                child: action == AuthAction.signIn
-                    ? const Text(
-                        'Welcome to FlutterFire, please sign in!')
-                    : const Text(
-                        'Welcome to Flutterfire, please sign up!'),
-              );
-            },
-            footerBuilder: (context, action) {
-              return const Padding(
-                padding: EdgeInsets.only(top: 16),
-                child: Text(
-                  'By signing in, you agree to our terms and conditions.',
-                  style: TextStyle(color: Colors.grey),
-                ),
-              );
-            },
-            sideBuilder: (context, shrinkOffset) {
-              return Padding(
-                padding: const EdgeInsets.all(20),
-                child: AspectRatio(
-                  aspectRatio: 1,
-                  child: Image.asset('flutterfire_300x.png'),
-                ),
-              );
+                  padding: const EdgeInsets.fromLTRB(0, 0, 0, 0),
+                  child: AspectRatio(
+                    aspectRatio: 1,
+                    child: Image.asset(
+                        'assets/flutterfire_300x.png'),
+                  ));
             },
           );
         }
