@@ -33,7 +33,7 @@ class MyApp extends StatelessWidget {
                 onPressed: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => const map()),
+                    MaterialPageRoute(builder: (context) => const Map()),
                   );
                 },
                 child: const Text('map'),
@@ -43,7 +43,7 @@ class MyApp extends StatelessWidget {
                 onPressed: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => const gemini()),
+                    MaterialPageRoute(builder: (context) => const Gemini()),
                   );
                 },
                 child: const Text('gemini'),

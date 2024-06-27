@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class gemini extends StatelessWidget {
-  const gemini({super.key});
+class Gemini extends StatelessWidget {
+  const Gemini({super.key});
 
   @override
   Widget build(BuildContext context) {
