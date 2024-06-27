@@ -53,7 +53,7 @@ class MyApp extends StatelessWidget {
                 onPressed: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => const Placeholder()),
+                    MaterialPageRoute(builder: (context) => const TextToSpeech()),
                   );
                 },
                 child: const Text('TTS'),
